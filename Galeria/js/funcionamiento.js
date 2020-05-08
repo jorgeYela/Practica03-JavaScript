@@ -35,42 +35,6 @@ function generar() {
 
 }
 
-/*function carrousel(direccion){
-
-    contador = 0;
-
-    let direccion1 = direccion;
-
-    if(direccion1=='atras'){
-        if(contador==0){
-            document.getElementById('imagen').src= imagenesHabilitadas[imagenesHabilitadas.length-1];
-            contador++;
-        }else if (contador<imagenesHabilitadas.length-1) {
-            document.getElementById('imagen').src= imagenesHabilitadas[imagenesHabilitadas.length-1-contador];
-            contador++;
-        }else {
-            document.getElementById('imagen').src= imagenesHabilitadas[0];
-            //boton.botonAtras.disabled=true;
-            contador= imagenesHabilitadas.length -1;
-        }
-    }
-
-    if(direccion1=='adelante'){
-        if(contador==0){
-            document.getElementById('imagen').src= imagenesHabilitadas[0];
-            contador++;
-        }else if (contador<imagenesHabilitadas.length-1) {
-            document.getElementById('imagen').src= imagenesHabilitadas[contador];
-            contador++;
-        }else {
-            document.getElementById('imagen').src= imagenesHabilitadas[imagenesHabilitadas.length-1];
-            contador=0;
-        }
-    }
-
-}*/
-
-
 var contador=0;
 
 function moverDerecha(boton){
@@ -100,10 +64,36 @@ function moverDerecha(boton){
         contador++;
         var elemento = document.getElementById("texto");
         elemento.innerHTML += contador+" desde if contador == 4--------------------";
+        document.getElementById("mov1").style.backgroundColor='blue';
+        boton.derechita.disable=true;
     } else {
         boton.derechita.disable=true;
         var elemento = document.getElementById("texto");
-        elemento.innerHTML += contador+" nada massssss serpiente soy perrin--------------------";
+        elemento.innerHTML += contador+" nada massssss serpiente perrin--------------------";
+    }
+
+}
+
+function moverIzquierda(boton){
+    
+    if(contador == 5) {
+        document.getElementById('imagen').src = imagenesHabilitadas[4];
+        contador = contador - 1;
+    } else if(contador == 4) {
+        document.getElementById('imagen').src = imagenesHabilitadas[3];
+        contador = contador -1;
+    } else if(contador == 3) {
+        document.getElementById('imagen').src = imagenesHabilitadas[2];
+        contador = contador -1;
+    } else if(contador == 2) {
+        document.getElementById('imagen').src = imagenesHabilitadas[1];
+        contador = contador -1;
+    } else if(contador == 1) {
+        document.getElementById('imagen').src = imagenesHabilitadas[0];
+        contador = contador -1;
+        boton.izquierdita.disable=true;
+    } else {
+        boton.izquierdita.disable=true;
     }
 
 }
