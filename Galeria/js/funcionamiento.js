@@ -62,10 +62,9 @@ function moverDerecha(boton){
     } else if(contador == 4) {
         document.getElementById('imagen').src = imagenesHabilitadas[4];
         contador++;
+        document.getElementById("mov1").style.color='#aaa';
         var elemento = document.getElementById("texto");
         elemento.innerHTML += contador+" desde if contador == 4--------------------";
-        document.getElementById("mov1").style.backgroundColor='blue';
-        boton.derechita.disable=true;
     } else {
         boton.derechita.disable=true;
         var elemento = document.getElementById("texto");
