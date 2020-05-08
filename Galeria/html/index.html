@@ -5,47 +5,21 @@
     <title>Carrousel</title>
     <link rel="stylesheet" href="/Galeria/css/estiloGaleria.css" />
   </head>
-
-  <body onload="generar()">
-    <!--<div class="contenedor">
-      <div class="botonAtras" onclick="carrousel('atras')">
-        A
-      </div>
-      <div class="botonAdelante" onclick="carrousel('adelante')">
-        A
-      </div>
-      <div class="botonIniciar" onclick="generar()">
-        AndoGenerando
-      </div>
-      <img src="/Galeria/Imagenes/bandera.jpg" alt="" id="imagen">
-    </div>-->
-
+  <body>
     <section id="contenedorGaleria">
-
       <h1>Club Deportivo El Nacional</h1>
-
       <div id="contenedorFotografias">
-
         <img src="/Galeria/Imagenes/cargandoGaleria.gif" alt="" id="imagen">
-
       </div>
-
       <div id="contenedorBotones">
-
-        <input type="button" id="mov2" value="MoverIzquierda" onclick="moverIzquierda('izquierdita')">
-        <input type="button" id="mov1" value="MoverDerecha" onclick="moverDerecha('derechita')">
-
+        <input type="button" id="mov2" value="Anterior" onclick="moverIzquierda('izquierdita')">
+        <input type="button" id="cargarFotos" value="Iniciar" onclick="generar()">
+        <input type="button" id="mov1" value="Siguiente" onclick="moverDerecha('derechita')">
       </div>
-
       <div id="contador">
         <p id="texto"> </p>
       </div>
-
     </section>
-
-<script type="text/javascript" src="/Galeria/js/funcionamiento.js">
-
-</script>
-
+    <script type="text/javascript" src="/Galeria/js/funcionamiento.js"></script>
   </body>
 </html>
