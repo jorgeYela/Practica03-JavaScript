@@ -1,12 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Galeria - El Nacional</title>
-<head>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Carrousel</title>
+    <link rel="stylesheet" href="/Galeria/css/estiloGaleria.css" />
+  </head>
 
-</head>
-<body>
-    <script src="/Galeria/js/funcionamiento.js"></script>
-</body>
+  <body onload="generar()">
+    <!--<div class="contenedor">
+      <div class="botonAtras" onclick="carrousel('atras')">
+        A
+      </div>
+      <div class="botonAdelante" onclick="carrousel('adelante')">
+        A
+      </div>
+      <div class="botonIniciar" onclick="generar()">
+        AndoGenerando
+      </div>
+      <img src="/Galeria/Imagenes/bandera.jpg" alt="" id="imagen">
+    </div>-->
+
+    <section id="contenedorGaleria">
+
+      <h1>Club Deportivo El Nacional</h1>
+
+      <div id="contenedorFotografias">
+
+        <img src="/Galeria/Imagenes/bandera.jpg" alt="" id="imagen">
+
+      </div>
+
+      <div id="contenedorBotones">
+
+        <input type="button" class="mov" value="Mover" onclick="moverDerecha('derechita')"><br>
+
+      </div>
+
+      <div id="contador">
+        <p id="texto"> </p>
+      </div>
+
+    </section>
+
+<script type="text/javascript" src="/Galeria/js/funcionamiento.js">
+
+</script>
+
+  </body>
 </html>
