@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeria - El Nacional</title>
+    <script type="text/javascript">
+        function aleatorios(min, max) {
+            var numero1, numero2, numero3, numero4, numero5;
+            if(max>0){
+                var rept = 0;
+                var end = 0;
+                arraynum = [];
+                while (rept != -1){
+                    for(var i=1 ; i<= max ; i++){
+                        var numaleatorio = Math.floor(Math.random() * (max+1));
+                        if (arraynum.indexOf(numaleatorio) < 0 && numaleatorio != 0) {
+                            //document.write(numaleatorio + '<br>');
+                            arraynum.push(numaleatorio);
+                            end++;
+                        }
+                        end == max ? rept = -1 : false ;
+                    }
+                }
+            }
+            document.write(arraynum[3]);
+	    }
+    </script>
+</head>
+<body  onload="aleatorios(0,5)">
+    
+</body>
+</html>
