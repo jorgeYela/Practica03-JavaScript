@@ -1,5 +1,7 @@
 function generar() {
 
+    document.getElementById('imagen').src = '/Galeria/Imagenes/check.gif';
+
     var indice = 0;
 
     imagenesHabilitadas = new Array();
@@ -48,7 +50,6 @@ function moverDerecha(boton){
 
     } else if(contador == 1) {
 
-        document.getElementById('imagen').style.transform = "translate(-50px,0)";
         document.getElementById('imagen').src = imagenesHabilitadas[1];
         contador++;
 

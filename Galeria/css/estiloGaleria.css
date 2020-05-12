@@ -1,36 +1,16 @@
+body {
+    background-color: red;
+}
 #contenedorGaleria{
-    border: royalblue 10px solid;
+    border: rgb(144, 179, 217) 5pxsolid;
     padding: 70px 50px;
     position: absolute;
 }
 #contenedorFotografias{
     border: springgreen 10px ridge;
+    margin-bottom:10px;
 }
 #imagen{
     width: 100%;
     height: 400px;
-    transition: width 10s;
-} 
-#imagen1{
-    width: 100%;
-    height: 400px;
-    margin-top: -404px;
-    margin-bottom: 10%;
-    margin-left: 100%;
-    transition: width 10s;
-}
-#imagen2{
-    width: 100px;
-    height: 400px;
-    transition: width 10s;
-}
-#imagen3{
-    width: 100px;
-    height: 400px;
-    transition: width 10s;
-}
-#imagen4{
-    width: 100px;
-    height: 400px;
-    transition: width 10s;
 }
