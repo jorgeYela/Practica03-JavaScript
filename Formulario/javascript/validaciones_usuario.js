@@ -37,3 +37,40 @@ function validarCamposObligatorios() {
     }
     return bandera
 }
+function validarCampoCedula(elemento) {
+    var bandera = true
+    if(elemento.value != '') {
+        var cad = document.getElementById('cedula').value.trim();
+        var total = 0;
+        var longitud = cad.length;
+        var longcheck = longitud - 1;
+        if(cad !== '' && longitud === 10) {
+            for(i = 0; i< longcheck; i++) {
+                if(i%2 === 0) {
+                    var aux = cad.charAt(i) * 2;
+                    if(aux > 9) aux -= 9;
+                        total += aux;
+                } else {
+                   total += parseInt(cad.charAt(i));
+                }
+            }
+            total = total % 10 ? 10 - total % 10 :0;
+            if(cad.charAt(longitud-1) == total) {
+            document.getElementById('mensajeCedula').innerHTML = '';
+            elemento.style.border = '1px black solid'
+            bandera = true;
+            } 
+        } else {
+            document.getElementById('mensajeCedula').innerHTML = '<br>Cedula Invalida...'
+            elemento.style.border = '1px red solid'
+            elemento.className = 'error'
+            bandera = false
+        }
+    } else {
+        document.getElementById('mensajeCedula').innerHTML = '<br>El Campo Cedula esta vacio...'
+        elemento.style.border = '1px red solid'
+        elemento.className = 'error'
+        bandera = false
+    }
+    return bandera
+}
