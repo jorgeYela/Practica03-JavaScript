@@ -168,3 +168,24 @@ function validarFecha(elemento) {
         return false;
     }
 }
+function validarCorreoElectronico(elemento) {
+    if(elemento.value != '') {
+        var dominio1 = 'ups.edu.ec';
+        var dominio2 = 'est.ups.edu.ec';
+        var indexArroba = (elemento.value.trim().indexOf(String.fromCharCode(64)))+1;
+        var dominioIngresado = elemento.value.substr(indexArroba,elemento.value.length)
+        if((dominioIngresado == dominio1)||(dominioIngresado == dominio2)) {
+            document.getElementById('mensajeCorreo').innerHTML = '';
+            elemento.style.border = '1px black solid'
+            return true;
+        } else {
+            document.getElementById('mensajeCorreo').innerHTML = '<br>Dominio desconocido...'
+            elemento.style.border = '1px red solid'
+            elemento.className = 'error'
+            bandera = false;
+            return false;
+        }
+    } else {
+        return false;
+    }
+}
