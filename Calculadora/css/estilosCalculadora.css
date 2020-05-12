@@ -1,8 +1,11 @@
+body{
+    background-color: rgb(209, 232, 214);
+}
 #calcu {
     border: 5px solid rgb(111, 232, 140);
 	margin-left: 380px;
     margin-top: 20px;
-    margin-right: 400px;
+    margin-right: 435px;
 }
 .cajaTexto {
 	width: 665px; 
@@ -64,7 +67,7 @@ input:hover{
 h1 {
 	text-align: center;
 	font-size: 50px;
-	margin-right: 150px;
+	margin-right: 50px;
     margin-top: 20px;
     color: rgb(111, 232, 140);
 }
