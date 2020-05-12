@@ -25,3 +25,15 @@ input {
 	color: #fff;
 	border-style: none;
 }
+
+input.limpiar {
+    width: 325px;
+    height: 50px;
+}
+
+.borrar{
+	width: 325px;
+    height: 50px;
+    margin-right: -3px;
+    background-color: rgb(111, 232, 140);
+}
