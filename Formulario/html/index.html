@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <script type="text/javascript" src="validaciones_usuario.js"></script>
+    <script type="text/javascript" src="/Formulario/javascript/validaciones_usuario.js"></script>
     <style type="text/css">
         .error {
             color: red;
@@ -44,7 +44,7 @@
         <input type="password" id="contrasena" name="contrasena" value="" placeholder="Ingrese su contraseña..." onkeyup="return validarContrasena(this)"/><br>
         <span id="mensajeContrasena" class="error"></span><br>
 
-        <input type="submit" id="crear" name="crear" value="Aceptar" />
+        <input action="../../form-result.php" type="submit" id="crear" name="crear" value="Aceptar" />
 
         <input type="reset" id="cancelar" name="cancelar" value="Cancelar" />
 
