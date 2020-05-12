@@ -1,0 +1,27 @@
+#calcu {
+    border: 5px solid rgb(111, 232, 140);
+	margin-left: 380px;
+    margin-top: 20px;
+    margin-right: 400px;
+}
+
+.cajaTexto {
+	width: 665px; 
+	height: 100px; 
+	text-align: center;
+    background-color: rgb(230, 255, 232);
+    border: 2px solid rgb(111, 232, 210);
+    color: rgb(111, 232, 210);
+	font-size: 50px;
+}
+
+input {
+	width: 150px;
+	height: 50px;
+	font-size: 25px;
+	border-radius: 5px;
+	margin: 10px;
+	background-color: rgb(111, 232, 210);
+	color: #fff;
+	border-style: none;
+}
