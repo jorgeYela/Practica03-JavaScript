@@ -37,3 +37,37 @@ input.limpiar {
     margin-right: -3px;
     background-color: rgb(111, 232, 140);
 }
+input.mas:hover{
+    background-color: rgb(111, 232, 210);
+	color: #fff;
+}
+
+input.menos:hover{
+    background-color: rgb(111, 232, 210);
+	color: #fff;
+}
+
+input.por:hover{
+    background-color: rgb(111, 232, 210);
+	color: #fff;
+}
+
+input.divisor:hover{
+    background-color: rgb(111, 232, 210);
+	color: #fff;
+}
+
+input.limpiar:hover{
+    background-color: rgb(111, 232, 210);
+	color: #fff;
+}
+
+input.borrar:hover{
+    background-color: rgb(111, 232, 210);
+	color: #fff;
+}
+
+input:hover{
+    background-color: rgb(111, 232, 140);
+	color: #fff;
+}
