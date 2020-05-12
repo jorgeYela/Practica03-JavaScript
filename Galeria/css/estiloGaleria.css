@@ -1,5 +1,9 @@
+@font-face{
+    font-family: 'MiFuente';
+    src: url(/Galeria//Tipografia/Lobster-Regular.ttf);
+}
 body {
-    background-color: red;
+    background-color:rgb(105, 0, 7);
 }
 #contenedorGaleria{
     border: rgb(144, 179, 217) 5pxsolid;
@@ -7,10 +11,16 @@ body {
     position: absolute;
 }
 #contenedorFotografias{
-    border: springgreen 10px ridge;
-    margin-bottom:10px;
+    border: rgb(108, 127, 196) 10px ridge;
+    margin-bottom:30px;
 }
 #imagen{
     width: 100%;
-    height: 400px;
+    height: 500px;margin-bottom: -5px;
+}
+#tituloPagina{
+    text-align: center;
+    margin-top: -30px;
+    font-family: 'MiFuente';
+    font-size: xx-large;
 }
