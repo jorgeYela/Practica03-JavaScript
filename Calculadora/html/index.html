@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>Calculadora</title>
+    <script type="text/javascript">
+        function restarCadena() {
+            calculadora.texto.value = calculadora.texto.value.substring(0,calculadora.texto.value.length-1);
+        }
+    </script>
 </head>
 <body>
-    
+    <h1>Calculadora UPS</h1>
+    <form id="calcu" name="calculadora">
+        <input type="" name="texto" class="cajaTexto"><br>
+        <input type="button" class="limpiar" value="C" onclick="calculadora.texto.value=''">
+        <input type="button" class="borrar" value="Borrar &larr;" onclick="restarCadena()"><br>
+        <input type="button" value="1" onclick="calculadora.texto.value+='1'">
+        <input type="button" value="2" onclick="calculadora.texto.value+='2'">
+        <input type="button" value="3" onclick="calculadora.texto.value+='3'">
+        <input type="button" class="mas" value="+" onclick="calculadora.texto.value+='+'"><br>
+        <input type="button" value="4" onclick="calculadora.texto.value+='4'">
+        <input type="button" value="5" onclick="calculadora.texto.value+='5'">
+        <input type="button" value="6" onclick="calculadora.texto.value+='6'">
+        <input type="button" class="menos" value="-" onclick="calculadora.texto.value+='-'"><br>
+        <input type="button" value="7" onclick="calculadora.texto.value+='7'">
+        <input type="button" value="8" onclick="calculadora.texto.value+='8'">
+        <input type="button" value="9" onclick="calculadora.texto.value+='9'">
+        <input type="button" class="por" value="x" onclick="calculadora.texto.value+='*'"> <br>
+        <input type="button" class="punto" value="." onclick="calculadora.texto.value+='.'">
+        <input type="button" value="0" onclick="calculadora.texto.value+='0'">
+        <input type="button" class="igual" value="=" onclick="calculadora.texto.value=eval(calculadora.texto.value)">
+        <input type="button" class="divisor" value="/" onclick="calculadora.texto.value+='/'">
+    </form>
 </body>
 </html>
