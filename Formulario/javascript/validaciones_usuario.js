@@ -189,3 +189,43 @@ function validarCorreoElectronico(elemento) {
         return false;
     }
 }
+function validarContrasena(elemento) {
+    if(elemento.value != '') {
+        if(elemento.value.length >= 8) {		
+            var mayuscula = false;
+            var minuscula = false;
+            var numero = false;
+            var caracter_especial = false;
+            for(var i = 0;i<elemento.value.length;i++) {
+                if(elemento.value.charCodeAt(i) >= 65 && elemento.value.charCodeAt(i) <= 90) {
+                    mayuscula = true;
+                } else if(elemento.value.charCodeAt(i) >= 97 && elemento.value.charCodeAt(i) <= 122) {
+                    minuscula = true;
+                } else if(elemento.value.charCodeAt(i) >= 48 && elemento.value.charCodeAt(i) <= 57) {
+                    numero = true;
+                } else if(elemento.value.charCodeAt(i) == 64 || elemento.value.charCodeAt(i) == 95 || elemento.value.charCodeAt(i) == 36) {
+                    caracter_especial = true;
+                }  else {
+                    return true;
+                }
+            }
+            if(mayuscula == true && minuscula == true && caracter_especial == true && numero == true) {
+                document.getElementById('mensajeContrasena').innerHTML = '';
+                elemento.style.border = '1px black solid'
+                return true;
+            } else {
+                document.getElementById('mensajeContrasena').innerHTML = '<br>Contraseña debil...'
+                elemento.style.border = '1px red solid'
+                elemento.className = 'error'
+                return false; 
+            }
+        } else {
+            document.getElementById('mensajeContrasena').innerHTML = '<br>Contraseña debil, inserte por lo menos 8 caracteres'
+            elemento.style.border = '1px red solid'
+            elemento.className = 'error'
+            return false;
+        }
+    } else {
+        return false;
+    }
+}
