@@ -101,3 +101,33 @@ function validarNombres(elemento) {
         bandera = false;
     }
 }
+function validarApellidos(elemento) {
+    if(elemento.value != '') {
+        if((elemento.value.charCodeAt(elemento.value.length-1) >= 97 && elemento.value.charCodeAt(elemento.value.length-1) <= 122) || (elemento.value.charCodeAt(elemento.value.length-1) == 32)  || (elemento.value.charCodeAt(elemento.value.length-1) >= 65 && elemento.value.charCodeAt(elemento.value.length-1) <= 90)) {
+            
+            var espacio = console.log(elemento.value.trim().indexOf(String.fromCharCode(32)))
+
+            if(elemento.value.trim().indexOf(String.fromCharCode(32)) == -1) {
+                document.getElementById('mensajeApellidos').innerHTML = '<br>Apellidos Incompletos...'
+                elemento.style.border = '1px red solid'
+                elemento.className = 'error'
+                return false;
+            } else {
+                document.getElementById('mensajeApellidos').innerHTML = '';
+                elemento.style.border = '1px black solid'
+                return true;
+            }
+        } else {
+            elemento.value = elemento.value.substring(0, elemento.value.length-1)
+            document.getElementById('mensajeApellidos').innerHTML = '<br>Apellidos Incompletos...'
+            elemento.style.border = '1px red solid'
+            elemento.className = 'error'
+            return false;
+        }
+    } else {
+        document.getElementById('mensajeApellidos').innerHTML = '<br>El campo esta vacio'
+        elemento.style.border = '1px red solid'
+        elemento.className = 'error'
+        bandera = false;
+    }
+}
