@@ -37,42 +37,42 @@ function generar() {
 
 var contador=0;
 
+
 function moverDerecha(boton){
-    
+
     if(contador == 0) {
+
         document.getElementById("mov1").style.color='#2b2';
         document.getElementById('imagen').src = imagenesHabilitadas[0];
         contador++;
-        var elemento = document.getElementById("texto");
-        elemento.innerHTML += contador+" desde if contador == 0------------------";
+
     } else if(contador == 1) {
-        document.getElementById("mov1").style.color='#2b2';
+
+        document.getElementById('imagen').style.transform = "translate(-50px,0)";
         document.getElementById('imagen').src = imagenesHabilitadas[1];
         contador++;
-        var elemento = document.getElementById("texto");
-        elemento.innerHTML += contador+" desde if contador == 1------------------";
+
     } else if(contador == 2) {
+        
         document.getElementById("mov1").style.color='#2b2';
         document.getElementById('imagen').src = imagenesHabilitadas[2];
         contador++;
-        var elemento = document.getElementById("texto");
-        elemento.innerHTML += contador+" desde if contador == 2-------------------";
+        
     } else if(contador == 3) {
         document.getElementById("mov1").style.color='#2b2';
         document.getElementById('imagen').src = imagenesHabilitadas[3];
         contador++;
-        var elemento = document.getElementById("texto");
-        elemento.innerHTML += contador+" desde if contador == 3--------------------";
+        
     } else if(contador == 4) {
+        
         document.getElementById('imagen').src = imagenesHabilitadas[4];
         contador++;
         document.getElementById("mov1").style.color='#aaa';
-        var elemento = document.getElementById("texto");
-        elemento.innerHTML += contador+" desde if contador == 4--------------------";
+        
     } else {
+        
         boton.derechita.disable=true;
-        var elemento = document.getElementById("texto");
-        elemento.innerHTML += contador+" nada massssss serpiente perrin--------------------";
+        
     }
 
 }
