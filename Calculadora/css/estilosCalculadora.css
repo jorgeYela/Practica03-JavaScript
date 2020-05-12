@@ -71,3 +71,31 @@ input:hover{
     background-color: rgb(111, 232, 140);
 	color: #fff;
 }
+
+h1 {
+	text-align: center;
+	font-size: 50px;
+	margin-right: 150px;
+    margin-top: 20px;
+    color: rgb(111, 232, 140);
+}
+
+.mas {
+    background-color: rgb(111, 232, 140);
+}
+
+.menos {
+	background-color: rgb(111, 232, 140);
+}
+
+.por {
+	background-color: rgb(111, 232, 140);
+}
+
+.divisor {
+	background-color: rgb(111, 232, 140);
+}
+
+.limpiar {
+	background-color: rgb(111, 232, 140);
+}
