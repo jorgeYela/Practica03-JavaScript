@@ -34,6 +34,8 @@ function validarCamposObligatorios() {
     }
     if(!bandera) {
         alert('Error: revisar los comentarios')
+    } else {
+        alert('Felecitaciones paso el registro')
     }
     return bandera
 }
