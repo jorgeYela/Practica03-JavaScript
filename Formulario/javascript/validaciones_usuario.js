@@ -145,3 +145,26 @@ function validarTelefono(elemento) {
         
     }
 }
+function validarFecha(elemento) {
+    if(elemento.value != '') {
+        var dia = elemento.value[0]+elemento.value[1];
+        var mes = elemento.value[3]+elemento.value[4];
+        var ano = elemento.value[6]+elemento.value[7]+elemento.value[8]+elemento.value[9];
+
+        console.log(ano)
+
+        if( ((dia >= 1)&&(dia <= 31)) && (elemento.value[2] == '/') && ((mes >= 1) && (mes <= 12)) && (elemento.value[5] == '/') && ((ano >= 0) && (ano <= 2020)) && (elemento.value.length <= 10)) {
+            document.getElementById('mensajeFecha').innerHTML = '';
+            elemento.style.border = '1px black solid'
+            return true;
+        } else {
+            document.getElementById('mensajeFecha').innerHTML = '<br>Inserte la fecha con el formato indicado...'
+            elemento.style.border = '1px red solid'
+            elemento.className = 'error'
+            bandera = false;
+            return false;
+        }
+    } else {
+        return false;
+    }
+}
