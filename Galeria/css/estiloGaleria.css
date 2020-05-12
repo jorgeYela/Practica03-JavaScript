@@ -2,16 +2,19 @@
     font-family: 'MiFuente';
     src: url(/Galeria//Tipografia/Lobster-Regular.ttf);
 }
+@font-face{
+    font-family: 'MiFuente-Botones';
+    src: url(/Galeria//Tipografia/Aclonica-Regular.ttf);
+}
 body {
     background-color:rgb(105, 0, 7);
 }
 #contenedorGaleria{
-    border: rgb(144, 179, 217) 5pxsolid;
     padding: 70px 50px;
     position: absolute;
 }
 #contenedorFotografias{
-    border: rgb(108, 127, 196) 10px ridge;
+    border: rgb(5, 30, 84) 10px ridge;
     margin-bottom:30px;
 }
 #imagen{
@@ -19,8 +22,50 @@ body {
     height: 500px;margin-bottom: -5px;
 }
 #tituloPagina{
+    color: rgb(144, 179, 217);
     text-align: center;
     margin-top: -30px;
     font-family: 'MiFuente';
     font-size: xx-large;
+}
+#mov1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 70px;
+    padding-left: 70px;
+    margin-left: 10px;
+    border-radius: 22px 22px 22px 22px;
+    background-color: rgb(144, 179, 217);
+    border: 5px solid  rgb(5, 30, 84);
+    color: rgb(5, 30, 84);
+    font-family: 'MiFuente-Botones';
+    font-size: 20px;
+}
+#cargarFotos{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 70px;
+    padding-left: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 22px 22px 22px 22px;
+    background-color: rgb(144, 179, 217);
+    border: 5px solid  rgb(5, 30, 84);
+    color: rgb(5, 30, 84);
+    font-family: 'MiFuente-Botones';
+    font-size: 20px;
+}
+#mov2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 70px;
+    padding-left: 70px;
+    margin-left: 330px;
+    margin-right: 10px;
+    border-radius: 22px 22px 22px 22px;
+    background-color: rgb(144, 179, 217);
+    border: 5px solid  rgb(5, 30, 84);
+    color: rgb(5, 30, 84);
+    font-family: 'MiFuente-Botones';
+    font-size: 20px;
 }

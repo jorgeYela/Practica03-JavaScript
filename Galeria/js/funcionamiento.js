@@ -44,7 +44,7 @@ function moverDerecha(boton){
 
     if(contador == 0) {
 
-        document.getElementById("mov1").style.color='#2b2';
+        /*document.getElementById("mov1").style.color='#2b2';*/
         document.getElementById('imagen').src = imagenesHabilitadas[0];
         contador++;
 
@@ -55,12 +55,12 @@ function moverDerecha(boton){
 
     } else if(contador == 2) {
         
-        document.getElementById("mov1").style.color='#2b2';
+        /*document.getElementById("mov1").style.color='#2b2';*/
         document.getElementById('imagen').src = imagenesHabilitadas[2];
         contador++;
         
     } else if(contador == 3) {
-        document.getElementById("mov1").style.color='#2b2';
+        /*document.getElementById("mov1").style.color='#2b2';*/
         document.getElementById('imagen').src = imagenesHabilitadas[3];
         contador++;
         
