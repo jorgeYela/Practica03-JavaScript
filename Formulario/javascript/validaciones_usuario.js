@@ -131,3 +131,17 @@ function validarApellidos(elemento) {
         bandera = false;
     }
 }
+function validarTelefono(elemento) {
+    if(elemento.value != '') {
+        if((elemento.value.charCodeAt(elemento.value.length-1) >= 48 && elemento.value.charCodeAt(elemento.value.length-1) <= 57) && (elemento.value.length <= 10)) {
+            document.getElementById('mensajeTelefono').innerHTML = '';
+            elemento.style.border = '1px black solid'
+            return true;
+        } else {
+            elemento.value = elemento.value.substring(0, elemento.value.length-1)
+            return false;
+        }
+    } else {
+        
+    }
+}
