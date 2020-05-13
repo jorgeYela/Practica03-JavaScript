@@ -60,6 +60,7 @@ function validarCampoCedula(elemento) {
             if(cad.charAt(longitud-1) == total) {
             document.getElementById('mensajeCedula').innerHTML = '';
             elemento.style.border = '1px black solid'
+            elemento.className = 'correcto'
             bandera = true;
             } 
         } else {
@@ -78,6 +79,7 @@ function validarCampoCedula(elemento) {
 }
 function validarNombres(elemento) {
     if(elemento.value != '') {
+
         if((elemento.value.charCodeAt(elemento.value.length-1) >= 97 && elemento.value.charCodeAt(elemento.value.length-1) <= 122) || (elemento.value.charCodeAt(elemento.value.length-1) == 32) || (elemento.value.charCodeAt(elemento.value.length-1) >= 65 && elemento.value.charCodeAt(elemento.value.length-1) <= 90)) {
             
             var espacio = console.log(elemento.value.trim().indexOf(String.fromCharCode(32)))
@@ -88,13 +90,14 @@ function validarNombres(elemento) {
                 elemento.className = 'error'
                 return false;
             } else {
-                
                 document.getElementById('mensajeNombres').innerHTML = '';
                 elemento.style.border = '1px black solid'
+                elemento.className = 'correcto'
                 return true;
             }
         } else {
             elemento.value = elemento.value.substring(0, elemento.value.length-1)
+            elemento.className = 'correcto'
         }
     } else {
         document.getElementById('mensajeNombres').innerHTML = 'El campo esta vacio'
@@ -117,6 +120,7 @@ function validarApellidos(elemento) {
             } else {
                 document.getElementById('mensajeApellidos').innerHTML = '';
                 elemento.style.border = '1px black solid'
+                elemento.className = 'correcto'
                 return true;
             }
         } else {
@@ -142,7 +146,6 @@ function validarTelefono(elemento) {
         } else {
             elemento.value = elemento.value.substring(0, elemento.value.length-1)
             elemento.style.border = '1px red solid'
-            elemento.className = 'error'
             bandera = false;
             return false;
         }
@@ -161,6 +164,7 @@ function validarFecha(elemento) {
         if( ((dia >= 1)&&(dia <= 31)) && (elemento.value[2] == '/') && ((mes >= 1) && (mes <= 12)) && (elemento.value[5] == '/') && ((ano >= 0) && (ano <= 2020)) && (elemento.value.length <= 10)) {
             document.getElementById('mensajeFecha').innerHTML = '';
             elemento.style.border = '1px black solid'
+            elemento.className = 'correcto'
             return true;
         } else {
             document.getElementById('mensajeFecha').innerHTML = 'Inserte la fecha con el formato indicado...'
@@ -182,6 +186,7 @@ function validarCorreoElectronico(elemento) {
         if((dominioIngresado == dominio1)||(dominioIngresado == dominio2)) {
             document.getElementById('mensajeCorreo').innerHTML = '';
             elemento.style.border = '1px black solid'
+            elemento.className = 'correcto'
             return true;
         } else {
             document.getElementById('mensajeCorreo').innerHTML = 'Dominio desconocido...'
@@ -217,6 +222,7 @@ function validarContrasena(elemento) {
             if(mayuscula == true && minuscula == true && caracter_especial == true && numero == true) {
                 document.getElementById('mensajeContrasena').innerHTML = '';
                 elemento.style.border = '1px black solid'
+                elemento.className = 'correcto'
                 return true;
             } else {
                 document.getElementById('mensajeContrasena').innerHTML = 'Contraseña debil...'
