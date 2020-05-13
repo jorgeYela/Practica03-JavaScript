@@ -4,28 +4,28 @@ function validarCamposObligatorios() {
         var elemento = document.forms[0].elements[i]
         if((elemento.value == '') && (elemento.type == 'text' ||elemento.type == 'password' )) {
             if(elemento.id == 'cedula') {
-                document.getElementById('mensajeCedula').innerHTML = '<br>Cedula vacia...'
+                document.getElementById('mensajeCedula').innerHTML = 'Cedula vacia...'
             }
             if(elemento.id == 'nombres') {
-                document.getElementById('mensajeNombres').innerHTML = '<br>Nombres vacios...'
+                document.getElementById('mensajeNombres').innerHTML = 'Nombres vacios...'
             }
             if(elemento.id == 'apellidos') {
-                document.getElementById('mensajeApellidos').innerHTML = '<br>Apellidos vacios...'
+                document.getElementById('mensajeApellidos').innerHTML = 'Apellidos vacios...'
             }
             if(elemento.id == 'direccion') {
-                document.getElementById('mensajeDireccion').innerHTML = '<br>Direccion vacia...'
+                document.getElementById('mensajeDireccion').innerHTML = 'Direccion vacia...'
             }
             if(elemento.id == 'telefono') {
-                document.getElementById('mensajeTelefono').innerHTML = '<br>Telefono vacio...'
+                document.getElementById('mensajeTelefono').innerHTML = 'Telefono vacio...'
             }
             if(elemento.id == 'fecha') {
-                document.getElementById('mensajeFecha').innerHTML = '<br>Fecha vacia...'
+                document.getElementById('mensajeFecha').innerHTML = 'Fecha vacia...'
             }
             if(elemento.id == 'correo') {
-                document.getElementById('mensajeCorreo').innerHTML = '<br>Correo Electronico vacio...'
+                document.getElementById('mensajeCorreo').innerHTML = 'Correo Electronico vacio...'
             }
             if(elemento.id == 'contrasena') {
-                document.getElementById('mensajeContrasena').innerHTML = '<br>Contraseña vacia...'
+                document.getElementById('mensajeContrasena').innerHTML = 'Contraseña vacia...'
             }
             elemento.style.border = '1px red solid'
             elemento.className = 'error'
@@ -63,13 +63,13 @@ function validarCampoCedula(elemento) {
             bandera = true;
             } 
         } else {
-            document.getElementById('mensajeCedula').innerHTML = '<br>Cedula Invalida...'
+            document.getElementById('mensajeCedula').innerHTML = 'Cedula Invalida...'
             elemento.style.border = '1px red solid'
             elemento.className = 'error'
             bandera = false
         }
     } else {
-        document.getElementById('mensajeCedula').innerHTML = '<br>El Campo Cedula esta vacio...'
+        document.getElementById('mensajeCedula').innerHTML = 'El Campo Cedula esta vacio...'
         elemento.style.border = '1px red solid'
         elemento.className = 'error'
         bandera = false
@@ -83,7 +83,7 @@ function validarNombres(elemento) {
             var espacio = console.log(elemento.value.trim().indexOf(String.fromCharCode(32)))
 
             if(elemento.value.trim().indexOf(String.fromCharCode(32)) == -1) {
-                document.getElementById('mensajeNombres').innerHTML = '<br>Nombres Incompletos...'
+                document.getElementById('mensajeNombres').innerHTML = 'Nombres Incompletos...'
                 elemento.style.border = '1px red solid'
                 elemento.className = 'error'
                 return false;
@@ -97,7 +97,7 @@ function validarNombres(elemento) {
             elemento.value = elemento.value.substring(0, elemento.value.length-1)
         }
     } else {
-        document.getElementById('mensajeNombres').innerHTML = '<br>El campo esta vacio'
+        document.getElementById('mensajeNombres').innerHTML = 'El campo esta vacio'
         elemento.style.border = '1px red solid'
         elemento.className = 'error'
         bandera = false;
@@ -110,7 +110,7 @@ function validarApellidos(elemento) {
             var espacio = console.log(elemento.value.trim().indexOf(String.fromCharCode(32)))
 
             if(elemento.value.trim().indexOf(String.fromCharCode(32)) == -1) {
-                document.getElementById('mensajeApellidos').innerHTML = '<br>Apellidos Incompletos...'
+                document.getElementById('mensajeApellidos').innerHTML = 'Apellidos Incompletos...'
                 elemento.style.border = '1px red solid'
                 elemento.className = 'error'
                 return false;
@@ -121,13 +121,13 @@ function validarApellidos(elemento) {
             }
         } else {
             elemento.value = elemento.value.substring(0, elemento.value.length-1)
-            document.getElementById('mensajeApellidos').innerHTML = '<br>Apellidos Incompletos...'
+            document.getElementById('mensajeApellidos').innerHTML = 'Apellidos Incompletos...'
             elemento.style.border = '1px red solid'
             elemento.className = 'error'
             return false;
         }
     } else {
-        document.getElementById('mensajeApellidos').innerHTML = '<br>El campo esta vacio'
+        document.getElementById('mensajeApellidos').innerHTML = 'El campo esta vacio'
         elemento.style.border = '1px red solid'
         elemento.className = 'error'
         bandera = false;
@@ -141,6 +141,9 @@ function validarTelefono(elemento) {
             return true;
         } else {
             elemento.value = elemento.value.substring(0, elemento.value.length-1)
+            elemento.style.border = '1px red solid'
+            elemento.className = 'error'
+            bandera = false;
             return false;
         }
     } else {
@@ -160,7 +163,7 @@ function validarFecha(elemento) {
             elemento.style.border = '1px black solid'
             return true;
         } else {
-            document.getElementById('mensajeFecha').innerHTML = '<br>Inserte la fecha con el formato indicado...'
+            document.getElementById('mensajeFecha').innerHTML = 'Inserte la fecha con el formato indicado...'
             elemento.style.border = '1px red solid'
             elemento.className = 'error'
             bandera = false;
@@ -181,7 +184,7 @@ function validarCorreoElectronico(elemento) {
             elemento.style.border = '1px black solid'
             return true;
         } else {
-            document.getElementById('mensajeCorreo').innerHTML = '<br>Dominio desconocido...'
+            document.getElementById('mensajeCorreo').innerHTML = 'Dominio desconocido...'
             elemento.style.border = '1px red solid'
             elemento.className = 'error'
             bandera = false;
@@ -216,13 +219,13 @@ function validarContrasena(elemento) {
                 elemento.style.border = '1px black solid'
                 return true;
             } else {
-                document.getElementById('mensajeContrasena').innerHTML = '<br>Contraseña debil...'
+                document.getElementById('mensajeContrasena').innerHTML = 'Contraseña debil...'
                 elemento.style.border = '1px red solid'
                 elemento.className = 'error'
                 return false; 
             }
         } else {
-            document.getElementById('mensajeContrasena').innerHTML = '<br>Contraseña debil, inserte por lo menos 8 caracteres'
+            document.getElementById('mensajeContrasena').innerHTML = 'Contraseña debil, inserte por lo menos 8 caracteres'
             elemento.style.border = '1px red solid'
             elemento.className = 'error'
             return false;

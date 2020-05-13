@@ -1,0 +1,262 @@
+body{
+    background-color: rgb(232, 190, 116);
+}
+#formulario01{
+    border: rgb(232, 217, 132) 5px solid;
+    padding: 20px 20px;
+}
+
+#titulo1{
+    color: brown;
+    margin-left: 650px;
+    margin-bottom: 50px;
+}
+#lblCedula{
+    position: absolute;
+    border: rgb(232, 217, 132) 5px solid;
+    padding: 5px 58px;
+    margin-right: 1px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+#cedula{
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-left: 300px;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 10px;
+}
+#mensajeCedula{
+    position: absolute;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-left: 300px;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: -20px;
+}
+#lblNombre{
+    position: absolute;
+    border: rgb(232, 217, 132) 5px solid;
+    padding: 5px 60px;
+    margin-right: 1px;
+    margin-top: -70px;
+    margin-left: 700px;
+}
+#nombres{
+    position: absolute;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 950px;
+    margin-top: -85px;
+}
+#mensajeNombres{
+    position: absolute;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 950px;
+    margin-top: -55px;
+}
+#lblApellido{
+    position: absolute;
+    border: rgb(232, 217, 132) 5px solid;
+    padding: 5px 50px;
+    margin-right: 1px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+#apellidos{
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-left: 300px;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 10px;
+}
+#mensajeApellidos{
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-left: 300px;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 10px;
+}
+#lblDireccion{
+    position: absolute;
+    border: rgb(232, 217, 132) 5px solid;
+    padding: 5px 60px;
+    margin-right: 1px;
+    margin-top: -65px;
+    margin-left: 700px;
+}
+#direccion{
+    position: absolute;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 950px;
+    margin-top: -75px;
+}
+#mensajeDireccion{
+    position: absolute;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 950px;
+    margin-top: -55px;
+}
+#lblTelefono{
+    position: absolute;
+    border: rgb(232, 217, 132) 5px solid;
+    padding: 5px 53px;
+    margin-right: 1px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+#telefono{
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-left: 300px;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 10px;
+}
+#mensajeTelefono{
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-left: 300px;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 10px;
+}
+#lblFecha{
+    position: absolute;
+    border: rgb(232, 217, 132) 5px solid;
+    padding: 5px 75px;
+    margin-right: 1px;
+    margin-top: -75px;
+    margin-left: 700px;
+}
+#fecha{
+    position: absolute;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 950px;
+    margin-top: -85px;
+}
+#mensajeFecha{
+    position: absolute;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 950px;
+    margin-top: -55px;
+}
+#lblCorreo{
+    position: absolute;
+    border: rgb(232, 217, 132) 5px solid;
+    padding: 5px 20px;
+    margin-right: 1px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+#correo{
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-left: 300px;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 10px;
+}
+#mensajeCorreo{
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-left: 300px;
+    margin-top: 10px;
+}
+#lblContrasena{
+    position: absolute;
+    border: rgb(232, 217, 132) 5px solid;
+    padding: 5px 60px;
+    margin-right: 1px;
+    margin-top: -75px;
+    margin-left: 700px;
+}
+#contrasena{
+    position: absolute;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 950px;
+    margin-top: -85px;
+}
+#mensajeContrasena{
+    position: absolute;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 950px;
+    margin-top: -55px;
+}
+#crear{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 70px;
+    padding-left: 70px;
+    margin-left: 450px;
+    border-radius: 22px 22px 22px 22px;
+    background-color: rgb(232, 172, 116);
+    border: 5px solid  brown;
+    color: brown;
+    font-family: 'MiFuente-Botones';
+    font-size: 20px;
+}
+#cancelar{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 70px;
+    padding-left: 70px;
+    margin-left: 160px;
+    border-radius: 22px 22px 22px 22px;
+    background-color: rgb(232, 172, 116);
+    border: 5px solid  brown;
+    color: brown;
+    font-family: 'MiFuente-Botones';
+    font-size: 20px;
+}
